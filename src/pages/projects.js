@@ -49,7 +49,7 @@ const Project = ({ type, title, img, link, github, summary }) => {
         <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}} transition={{duration:0.2}} priority
                 sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 50vw" />
       </Link>
-      <div className="w-full flex flex-col items-start justify-between mt-4">
+      <div className="w-full flex flex-col items-start justify-between mt-4 ">
         <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">{type}</span>
         <span className="text-dark font-medium text-xl dark:text-light lg:text-lg md:text-base">{summary}</span>
         <Link href={link} target="_blank" className="hover:underline underline-offset-2">
@@ -90,7 +90,7 @@ const projects = () => {
                 title="Prompt GPT | Public AI Prompt "
                 summary="It's a public AI prompt sharing website,  user can register and login , and can Share their best prompt in public,  user can also add the TAGS to there prompt to help other user to find that prompt easily, It also have feed page were user can see all the public shared prompt at one place. This project Build Using NEXT-JS "
                 img={project1}
-                link="prompt-gpt.guptaharsh.me"
+                link="https://prompt-gpt.guptaharsh.me"
                 github="https://github.com/harsh137/PromptGPT"
               />
             </div>
@@ -100,7 +100,7 @@ const projects = () => {
                 title="SuperHero Wiki | Every Superhero And Supervillan"
                 summary="This website is a collection of superheroes and supervillains built using public superhero APIs. It provides easy access to information about all your favorite characters in one place. This Project is build using React"
                 img={project2}
-                link="superhero.guptaharsh.me"
+                link="https://superhero.guptaharsh.me"
                 github="https://github.com/harsh137/SwperHeroWiki"
               />
             </div>
