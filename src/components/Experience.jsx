@@ -7,22 +7,46 @@ const experiences = [
     id: 1,
     position: "Software Developer intern",
     company: "NatureMark System",
-    companyLink: "https://www.linkedin.com/company/nature-mark-sys/",
-    time: " April 2024 - June 2024",
-    address: "REMOTE",
-    work: "As a software developer on the Marketplace Building Team for Carbon Credit Verification and Sale and Purchase in NatureMark System, optimized API response by removing unwanted filters resulting in a 20% performance gain, and improved the loading time of Marketplace by optimizing images with added Tailwind CSS.",
+    companyLink: "https://www.ellucian.com/",
+    time: " January 2025 - May 2025",
+    address: "Sy No 76 & 86, Primeco Union City, ITPL Main Rd, Sadara Mangala Industrial Area, Pattandur Agrahara, Kadugodi, Bengaluru, Karnataka 560067",
+    work: [
+      "Optimized productivity card API endpoints using caching and compression to boost throughput significantly.",
+      "Integrated Google Workspace APIs with OAuth 2.0, improving user personalization and increasing daily interactions.",
+      "Implemented AWS DynamoDB for backend storage, enhancing query response times for large user datasets.",
+      "Engineered cross-platform authentication logic across multiple microservices, drastically reducing implementation time."
+    ],
   },
   {
     id: 2,
+    position: "Software Developer intern",
+    company: "NatureMark System",
+    companyLink: "https://www.naturemarksystems.com/",
+    time: " April 2024 - June 2024",
+    address: "REMOTE",
+    work:[
+  "Improved API efficiency by filtering redundant backend responses, enhancing user experience across platforms.",
+  "Refactored image handling and compression, enabling faster page loads on various devices and browsers.",
+  "Applied Tailwind CSS to accelerate UI build times, speeding up product release iterations.",
+  "Collaborated with developers to deploy a Node.js verification engine, significantly reducing manual workload."
+]  
+},
+  {
+    id: 3,
     position: "Web developer",
     company: "Suvidha Foundation",
-    companyLink: "https://www.linkedin.com/company/suvidha-foundation/",
+    companyLink: "https://suvidhafoundationedutech.org/",
     time: "October 2023 - November 2023",
     address: "Remote",
-    work: "Engineered a custom web tool for Admin to streamline the offer letter distribution process, resulting in a 40% increase in candidate response rate and 50% faster time-to-hire.",
+    work:[
+  "Developed a neural network model for resume shortlisting, automating candidate screening with high accuracy.",
+  "Built an admin web tool using Flask to streamline offer letter distribution and improve candidate engagement.",
+  "Designed and integrated a secure SQLite database with role-based access and encryption for candidate data.",
+  "Automated hiring workflows, reducing time-to-hire and increasing overall recruitment efficiency."
+]
   },
-  
-  
+
+
 ];
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
@@ -52,7 +76,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full md:text-sm">{work}</p>
+        <ul className="list-disc pl-5 font-medium w-full md:text-sm space-y-1">
+          {work.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
       </motion.div>
     </li>
   );
