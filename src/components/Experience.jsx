@@ -5,8 +5,23 @@ import ListIcon from "./ListIcon";
 const experiences = [
   {
     id: 1,
-    position: "Software Developer intern",
-    company: "NatureMark System",
+    position: "AI Engineering Intern",
+    company: "IQVIA Pvt Ltd",
+    companyLink: "https://www.iqvia.com/",
+    time: " August 2025 - January 2026",
+    address: " Omega, Embassy TechSquare, Marathahalli - Sarjapur Outer Ring Rd, Kaverappa Layout, Kadubeesanahalli, Bengaluru, Karnataka 560103",
+    work: [
+      " Converted simulation and optimization workflows into agentic systems using LangChain and LangGraph, improving execution reliability and reducing end-to-end workflow execution time from 15 minutes to 2 minutes",
+      "Built and benchmarked AI agents across Java, Rust, Go, C#, and JavaScript, evaluating concurrency handling, memory usage,latency, scalability, and power consumption.",
+      "Migrated PowerPoint report generation from AWS Lambda to local Node subprocess execution via Python, reducing cost and improving generation latency by 60%.",
+      "Built secure, multi-destination execution-data storage across AWS S3, SharePoint, and local environments with OAuth authentication, signed URLs, RBAC, and encryption.",
+      "Enhanced overall Promo Suite execution speed by 60% through logic optimization and parallel execution of compute-heavy tasks."
+    ],
+  },
+  {
+    id: 2,
+    position: "Software Developer Intern",
+    company: "Ellucian Higher Education System",
     companyLink: "https://www.ellucian.com/",
     time: " January 2025 - May 2025",
     address: "Sy No 76 & 86, Primeco Union City, ITPL Main Rd, Sadara Mangala Industrial Area, Pattandur Agrahara, Kadugodi, Bengaluru, Karnataka 560067",
@@ -18,32 +33,32 @@ const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     position: "Software Developer intern",
     company: "NatureMark System",
     companyLink: "https://www.naturemarksystems.com/",
     time: " April 2024 - June 2024",
     address: "REMOTE",
-    work:[
-  "Improved API efficiency by filtering redundant backend responses, enhancing user experience across platforms.",
-  "Refactored image handling and compression, enabling faster page loads on various devices and browsers.",
-  "Applied Tailwind CSS to accelerate UI build times, speeding up product release iterations.",
-  "Collaborated with developers to deploy a Node.js verification engine, significantly reducing manual workload."
-]  
-},
+    work: [
+      "Improved API efficiency by filtering redundant backend responses, enhancing user experience across platforms.",
+      "Refactored image handling and compression, enabling faster page loads on various devices and browsers.",
+      "Applied Tailwind CSS to accelerate UI build times, speeding up product release iterations.",
+      "Collaborated with developers to deploy a Node.js verification engine, significantly reducing manual workload."
+    ]
+  },
   {
-    id: 3,
-    position: "Web developer",
+    id: 4,
+    position: "Web Developer",
     company: "Suvidha Foundation",
     companyLink: "https://suvidhafoundationedutech.org/",
     time: "October 2023 - November 2023",
     address: "Remote",
-    work:[
-  "Developed a neural network model for resume shortlisting, automating candidate screening with high accuracy.",
-  "Built an admin web tool using Flask to streamline offer letter distribution and improve candidate engagement.",
-  "Designed and integrated a secure SQLite database with role-based access and encryption for candidate data.",
-  "Automated hiring workflows, reducing time-to-hire and increasing overall recruitment efficiency."
-]
+    work: [
+      "Developed a neural network model for resume shortlisting, automating candidate screening with high accuracy.",
+      "Built an admin web tool using Flask to streamline offer letter distribution and improve candidate engagement.",
+      "Designed and integrated a secure SQLite database with role-based access and encryption for candidate data.",
+      "Automated hiring workflows, reducing time-to-hire and increasing overall recruitment efficiency."
+    ]
   },
 
 

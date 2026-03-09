@@ -44,7 +44,7 @@ const Contact = () => {
               />
               <div className="min-w-[50vw] flex flex-col justify-between z-30 items-center rounded-lg backdrop-blur-md py-8 bg-dark/75 dark:bg-light/50 mt-4">
                 <form
-                  
+
                   action="https://formsubmit.co/guptaharsh137@gmail.com"
                   className="max-w-md"
                   method="POST"
@@ -91,7 +91,7 @@ const Contact = () => {
                       Submit
                     </button>
                     <Link
-                      href="mailto:nabeelahmed3129@gmail.com"
+                      href="mailto:guptaharsh137@gmail.com"
                       target={"_blank"}
                       className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-2 dark:text-light md:text-base md:m-0"
                     >

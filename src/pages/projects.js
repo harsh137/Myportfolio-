@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/carrent.png";
+import project5 from "../../public/images/projects/colourPalette.png";
+import project6 from "../../public/images/projects/ssst.png";
 import project2 from "../../public/images/projects/jobit.png";
 import project3 from "../../public/images/projects/tripguide.png";
 import project4 from "../../public/images/projects/navarithi.png"
@@ -45,14 +47,14 @@ const Project = ({ type, title, img, link, github, summary }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border boder-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] sm:h-[102%] xs:rounded-[1.5rem]' />
-      <Link href={link?link:github} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
+      <Link href={link ? link : github} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
         <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }} priority
           sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 50vw" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4 ">
         <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">{type}</span>
         <span className="text-dark font-medium text-xl dark:text-light lg:text-lg md:text-base">{summary}</span>
-        <Link href={link?link:github} target="_blank" className="hover:underline underline-offset-2">
+        <Link href={link ? link : github} target="_blank" className="hover:underline underline-offset-2">
           <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
@@ -96,17 +98,39 @@ const projects = () => {
                 title="Prompt GPT | Public AI Prompt "
                 summary="It's a public AI prompt sharing website,  user can register and login , and can Share their best prompt in public,  user can also add the TAGS to there prompt to help other user to find that prompt easily, It also have feed page were user can see all the public shared prompt at one place. This project Build Using NEXT-JS "
                 img={project1}
-                link="https://prompt-gpt.guptaharsh.me"
+                link="https://prompt-gpt-beige.vercel.app/"
                 github="https://github.com/harsh137/PromptGPT"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Project"
+                title="Color Palette"
+                summary="A public color palette sharing platform where users can discover and share beautiful color combinations. It features a curated collection of trending palettes to help designers and developers find the perfect color scheme for their projects."
+                img={project5}
+                link="https://colorspalette.in"
+                github="https://github.com/harsh137/color_palette"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Project"
+                title="Dynamic Temple WebPage"
+                summary="A dynamic temple website featuring a comprehensive admin dashboard that allows administrators to manage and update all aspects of the site, including content and images, in real-time. For Admin login go to /admin and use this email: guptaharsh137@gmail.com and password: Harshkkkkk1@"
+                img={project6}
+                link="https://ssst-sable.vercel.app/"
+                github="https://github.com/harsh137/ssst"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Project"
                 title="SuperHero Wiki | Every Superhero And Supervillan"
                 summary="This website is a collection of superheroes and supervillains built using public superhero APIs. It provides easy access to information about all your favorite characters in one place. This Project is build using React"
                 img={project2}
-                link="https://superhero.guptaharsh.me"
+                link="https://swper-hero-wiki-harsh137.vercel.app/"
                 github="https://github.com/harsh137/SwperHeroWiki"
               />
             </div>
