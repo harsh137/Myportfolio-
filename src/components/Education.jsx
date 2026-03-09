@@ -7,17 +7,17 @@ const education = [
     id: 1,
     type: "Master's of Computer Application",
     place: "Jain University Banglore",
-    time: "July 2023 - Present ",
+    time: "July 2023 - August 2025 ",
     info: "MCA is a postgraduate degree program that focuses on computer application development, software development, and information systems management. Graduates can work in various job roles such as software developer, system analyst, IT consultant, project manager, database administrator, web developer, and many more. ",
   },
-   {
+  {
     id: 2,
     type: "Bachelor's of Computer Application",
     place: "Lovely Professional University, Jalandhar",
     time: "july 2020 - july 2023",
     info: "BCA or Bachelor of Computer Applications is a 3-year undergraduate degree course that focuses on computer application development, software development, and programming. The BCA program is designed to provide students with a strong foundation in computer science fundamentals, programming languages, database management, and web development to pursue a career in the field of Information Technology (IT). Graduates can work as software developers, programmers, web designers, digital marketing specialists, IT consultants, and many more.",
   },
- 
+
 ];
 
 const Details = ({ type, time, place, info }) => {
